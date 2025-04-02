@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 设置placeholder属性为文本框设置占位文字 -->
+    <form action="submit">
+        <input type="text" placeholder="请输入文本">
+        <br>
+        <input type="password" placeholder="请输入密码">
+        <br>
+        <input type="checkbox">选项
+        <input type="checkbox">选项
+        <input type="checkbox">选项
+        <br>
+        <!-- 加入multiple属性可以一次选择多个文件 -->
+        <input type="file" multiple="multiple">
+        <br>
+        <!-- name属性可以为单选和复选设置分组，从而实现单选和复选的互斥。 
+         checked属性为单选和复选设置默认选中 -->
+        <input type="radio" name="gender" checked>男
+        <input type="radio" name="gender">女
+        <br>
+        <input type="checkbox" name="分组1" checked>复选1
+        <input type="checkbox" name="分组1">复选2
+        <input type="checkbox" name="分组1">复选3
+        <br>
+        <input type="radio">我同意
+        <br>
+        <input type="button" value="提交">
+    </form>
+</body>
+
+</html>

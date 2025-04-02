@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+</head>
+
+<body>
+    <!-- 表格没有列的概念，根据行来编辑
+    总体标签是<table></table>,
+    用<tr></tr>来表示行，
+    用<td></td>来表示行中的单元格
+    用<th></th>来表示表头单元格，默认加粗 -->
+    <table>
+
+        <thead>
+            <tr>
+                <th>测试表头</th>
+                <th>测试表头</th>
+                <th>测试表头</th>
+                <th>测试表头</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>测试文本1</td>
+            <td>测试文本2</td>
+            <td>测试文本3</td>
+            <td>测试文本4</td>
+        </tr>
+        <tr>
+            <td>测试文本1</td>
+            <td>测试文本2</td>
+            <td>测试文本3</td>
+            <td>测试文本4</td>
+        </tr>
+        <tr>
+            <td>测试文本1</td>
+            <td>测试文本2</td>
+            <td>测试文本3</td>
+            <td>测试文本4</td>
+        </tr>
+        <tr>
+            <td>测试文本1</td>
+            <td>测试文本2</td>
+            <td>测试文本3</td>
+            <td>测试文本4</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- 合并单元格
+    原理：根据左上原则留下要合并的单元格，删除被合并的单元格
+          找到留下的单元格设置rowspan或colspan属性使其扩充到需要的格数
+          rowspan属性表示合并的行数，colspan属性表示合并的列数
+          rowspan纵向合并，colspan横向合并
+     -->
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>测试表头</th>
+                <th>测试表头</th>
+                <th>测试表头</th>
+                <th>测试表头</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>测试文本1</td>
+            <td rowspan="2">测试文本2</td>
+            <td>测试文本3</td>
+            <td>测试文本4</td>
+        </tr>
+        <tr>
+            <td>测试文本1</td>
+            <!-- <td>测试文本2</td> -->
+            <td>测试文本3</td>
+            <td>测试文本4</td>
+        </tr>
+        <tr>
+            <td>测试文本1</td>
+            <td colspan="3" style="text-align: center;">测试文本2</td>
+            <!-- <td>测试文本3</td>
+            <td>测试文本4</td> -->
+        </tr>
+    </table>
+
+
+
+
+
+</body>
+
+</html>

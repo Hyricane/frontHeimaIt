@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 标签选择器，通过标签名选择器选择元素 */
+        h1{
+            color: red;
+        }
+        /* 类选择器，通过类名选择元素，含有相同类名的标签会一起被选中 */
+        /* 一个标签可以拥有多个class名，命名时用空格隔开 */
+        .p_1{
+            color: blue;
+        }
+        .p_1_1{
+            font-style: italic;
+        }
+        /* 不同于类选择器允许多次命名，id选择器具有唯一性，不允许重复命名，这里的重复并不是指两个标签不能使用同一个id（并不符合编码规范），而是一个标签的id只能有一个
+        二者关系类似姓名与身份证号 */
+        #p_3{
+            color: green;
+        }
+        #p_3_1{
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <h1>用标签选择我</h1>
+    <p class="p_1 p_1_1">用class选择我</p>
+    <p class="p_1">我与第一行class同名</p>
+    <p id="p_3">用id选择我</p>
+    <p id="p_3">重名id测试</p>
+    <p id="p_3 p_3_1">id多次命名测试</p>
+</body>
+</html>

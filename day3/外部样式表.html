@@ -4,35 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- style一般写在title下 -->
-    <style>
-        /* {}为选择器 */
-        h1{
-            
-            color: rgba(90, 132, 11, 0.5);
-
-        }
-        a{
-            background-color: green;
-            text-decoration: none;
-        }
-        /* 文字大小 */
-        #big{
-            font-size: larger;
-        }
-        #small{
-            font-size: smaller;
-        }
-        /* 文字倾斜 */
-        #em{
-            font-style: italic;
-        }
-        /* 行高=字体大小+间距 */
-        #l_h{
-            font-size: 10;
-            line-height: 20px;
-        }
-    </style>
+    <!-- 为了在开发中增加代码可维护性，一般将样式写在外部样式表中，而不是写在html中 -->
+     <!-- 使用<link rel="stylesheet" href="样式表路径">，一般写在<title></title>标签下 -->
+    <link rel="stylesheet" href="./CSS/外部样式表.css">
 </head>
 <body>
     <h1>改变字体颜色</h1>

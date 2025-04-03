@@ -1,0 +1,25 @@
+h1{
+            
+    color: rgba(90, 132, 11, 0.5);
+
+}
+a{
+    background-color: green;
+    text-decoration: none;
+}
+/* 文字大小 */
+#big{
+    font-size: larger;
+}
+#small{
+    font-size: smaller;
+}
+/* 文字倾斜 */
+#em{
+    font-style: italic;
+}
+/* 行高=字体大小+间距 */
+#l_h{
+    font-size: 10;
+    line-height: 20px;
+}

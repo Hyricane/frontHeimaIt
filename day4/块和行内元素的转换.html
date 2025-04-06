@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 使用display进行转换 */
+        div{
+            display: inline;
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+        span{
+            display: block;
+            background-color: green;
+            width: 100px;
+            height: 100px;
+        }
+        p{
+            display: inline-block;
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+        }
+        a{
+            display: inline-block;
+            background-color: brown;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>块被转为行内</div>
+    <div>块被转为行内</div>
+    <span>行内被转换为块</span>
+    <span>行内被转换为块</span>
+    <p>块被转换为行内块</p>
+    <p>块被转换为行内块</p>
+    <a href="">行内被转换为行内块</a>
+    <a href="">行内被转换为行内块</a>
+</body>
+</html>

@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p,div,span,a{
+        p,div,span,a,img,input,button{
             background-color: grey;
+            width: 100px;
+            height: 100px;
         }
     </style>
 </head>
@@ -18,5 +20,10 @@
     <!-- span,a,这种一行多个的元素我们称为行内元素，不能设置属性宽高，宽高由其中的文本内容大小决定 -->
     <span>行内元素span</span>
     <a href="">行内元素a</a>
+    <hr>
+    <!-- img,input,button,这种可以设置宽高,又可以一行多个的我们称为行内块元素,若不为其设置宽高,则宽高由内容决定 -->
+    <img src="./img/test2.png" alt="" >
+    <input type="text" name="" id="">
+    <button type="button">按钮</button>
 </body>
 </html>

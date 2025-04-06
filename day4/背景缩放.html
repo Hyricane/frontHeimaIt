@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            height: 500px;
+            background-color: grey;
+            background-image: url(./img/test2.png);
+            background-repeat: no-repeat;
+            /* 写法一，使用cover属性，会使图片缩放直到铺满整个容器，但图片会溢出，导致不完整 */
+            background-size: cover;
+            /* 使用contain属性，会使图片缩放直到某一边到达容器边界，图片完整保留，但会导致容器留白 */
+            background-size: contain;
+            /* 写法二：使用百分比，根据容器高宽来按比例缩放，比例不准确会使图片拉伸 */
+            /* background-size: 70% 60%; */
+            /* 写法三：使用像素单位缩放，比例不准确会使图片拉伸 */
+            /* background-size: 70px 60px; */
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

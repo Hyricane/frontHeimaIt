@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 不同于后代选择器，子代选择器只会选择直接子代，不会选择间接子代 */
+        div > span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>
+            div的子代
+        </span>
+        <p>
+            <span>
+                div的子代p的子代
+            </span>
+        </p>
+    </div>
+</body>
+</html>

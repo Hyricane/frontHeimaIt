@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 后代选择器根据父元素选择器选择子元素，比标签选择器更精确
+        父元素子元素可以是class,也可以是id,也可以是标签
+        不同于子代的标签选择器，后代选择器也会选择间接子代*/
+        div span{
+            color: red;
+        }
+        .box span{
+            color:blue
+        }
+        #text span{
+            color:orange
+        } 
+    </style>
+</head>
+<body>
+    <div>
+        <span>
+            测试文本
+        </span>
+    </div>
+    <div class="box">
+        <span>
+            测试文本
+        </span>
+    </div>
+    <div id="text">
+        <span>
+            测试文本
+        </span>
+    </div>
+    <div>
+        <p>
+            <span>
+                我是div的间接子代
+            </span>
+        </p>
+    </div>
+</body>
+</html>

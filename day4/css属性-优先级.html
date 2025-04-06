@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css的优先级：行内样式>内链式=外联式
+            在标签中：!important>行内式>id>class>标签名>通配符 */
+        div{
+            /* 在样式后添加!important使其获得最大优先级 */
+            color: red !important;
+        }
+        .box{
+            color: blue;
+        }
+        #box{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box" style="color: yellow;">
+        测试文本
+    </div>
+</body>
+</html>

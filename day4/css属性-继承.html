@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 继承：子代会继承父代的文本属性，但是子代有自己的属性会覆盖父代属性 */
+        div{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        测试文本
+        <span>
+            我继承
+            <p>
+                我继承
+            </p>
+            <!-- a标签没有继承父代 -->
+            <a href="#">我没有继承</a>
+        </span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /* 层叠：相同属性的值，后面的值会覆盖前面的值，不同属性会叠加 */
+            p{
+                color: red;
+                font-weight: 700;
+            }
+            p{
+                /* 绿色覆盖红色 */
+                color:green;
+                /* 字体大小被添加 */
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            测试文本
+        <p>
+    </body>
+    </html>
+</body>
+</html>

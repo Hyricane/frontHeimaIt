@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 可以看到，子容器并未同预想的一样与父容器上边距拉开100px的距离，而是带着父容器向下移动了100px，这种现象称为塌陷 */
+        /* 其原因是父容器的边并未被明确 */
+        .father{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .son{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            margin-top: 100px;
+        }
+
+        .father1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            box-sizing: border-box;
+
+            /* 解决方案1：子容器不写外边距，父容器写内边距 */
+            /* padding-top: 10px; */
+
+            /* 解决方案2：明确出父容器的边界 */
+            /* 通过设置溢出来明确边界 */
+            overflow: hidden;
+            /* 或 */
+            /* 直接设置边框 */
+            border: 1px solid #000;
+        }
+        .son1{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <hr>
+    <div class="father1">
+        <div class="son1"></div>
+    </div>
+</body>
+</html>

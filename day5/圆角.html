@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            /* 圆角原理：根据传入的数值为半径，在容器角上画圆，并擦除圆外的多余边角 */
+            /* 由此，可以实现以下操作 */
+
+            /* 1.使正方形容器变为圆形 */
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* 使半径等于容器宽度的一半,由此画出的圆的直径为容器的宽 */
+            border-radius: 100px;
+        }
+        .box2{
+            /* 2.使长方形容器变为胶囊状 */
+            width: 200px;
+            height: 100px;
+            background-color: skyblue;
+            /* 使半径等于高的一半，左右两边各画两个大圆 */
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 两个盒子的相邻外边距都被设置时，外边距会取较大的一方生效 */
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-bottom: 10px;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            /* 溢出部分隐藏 */
+            overflow: hidden;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 为溢出部分添加滚动条
+            横向纵向都有 */
+            overflow: scroll;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            /* 为溢出部分添加滚动条，仅纵向
+            且滚动条根据内容自动切换 */
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本</div>
+    <div class="box2">测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本</div>
+    <div class="box3">测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本测试文本</div>
+</body>
+</html>

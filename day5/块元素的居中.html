@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 不同于行内元素，和行内块元素，块元素不能使用text-align:center水平居中 */
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+            /* 对块元素进行水平居中，上边距设为0，左右边距设为自动auto
+            此时浏览器会根据网页宽度自动计算左右外边距 */
+            margin: 0  auto;
+
+            /* 并不能进行垂直居中，因为网页宽度固定，而长度是根据网页内容而定的，因此无法计算 */
+            /* margin: auto 0; */
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

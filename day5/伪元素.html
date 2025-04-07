@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 伪标签可以使用content属性来为真标签中添加内容 
+        并非无用，可以简化标签结构*/
+        /* before向前添加 */
+        div::before{
+            content: '前置文本';
+        }
+        /* after向后添加 */
+        div::after{
+            content: '后置文本';
+        }
+    </style>
+</head>
+<body>
+    <div>测试文本</div>
+</body>
+</html>

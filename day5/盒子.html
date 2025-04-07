@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+            /* 边框样式：solid实线 dashed虚线 dotted点线 double双线 none无; */
+            border: 10px double #000;
+            /* 内边距：盒子中内容距离盒子边界的距离
+            可以使用方位词指定方向
+            会撑大盒子 */
+
+            /* padding: 50px;
+            padding-left: 20px; */
+            /* padding-top: 60px; */
+
+            /* 按照顺时针顺序依次把值付给上右下左 */
+            /* padding: 20px 40px 60px 80px; */
+
+            /* 也是顺时针顺序，没被赋值的一边会默认跟随对向边距，
+            下边距没被赋值，故跟随上边距，为20px*/
+            /* padding: 20px 40px 60px; */
+            
+            /* 下，左边距没被赋值，分别跟随上边距和右边距，为20px和40px */
+            padding: 20px 40px;
+
+            /* 外边距：盒子外边框与外部元素的距离 
+            可以使用方位词指定方向*/
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">测试文本</div>
+</body>
+</html>

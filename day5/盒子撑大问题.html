@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* 通常情况下宽高并非指定盒子，而是内容 */
+            width: 100px;
+            height: 100px;
+
+            /* 添加边框和内边距会使盒子变大 */
+            /* 盒子直径=内容宽/高+2*内边距+2*边框 */ 
+            border: 10px solid black;
+            padding: 10px;
+
+            /* 默认状态，宽高为内容设置 */
+            box-sizing: content-box;
+            /* 设置该属性使得盒子大小就为所设置的宽高 */
+            box-sizing: border-box;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>测试文本</div>
+</body>
+</html>

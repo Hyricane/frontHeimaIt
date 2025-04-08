@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexbox{
+            display: flex;
+            width: 300px;
+            height: 600px;
+            background-color: orange;
+            /* 主轴对齐属性值：
+            flex-star左对齐
+            flex-end右对齐
+            center居中
+            space-around空白均分在弹性盒子两侧
+            space-between空白均分在弹性盒子之间，第一个盒子顶格
+            space-evenly空白均分在弹性盒子两侧，间距为盒子到父容器的距离 */
+            justify-content:space-evenly;
+
+            /* 侧轴对齐属性值：
+                flex-start顶部对齐
+                flex-end底部对齐
+                center居中
+                stretch拉伸
+                对该盒子的子盒子设置
+                */
+            align-items: flex-end;
+            /* 允许换行 */
+            flex-wrap: wrap;
+        }
+        div :nth-child(n){
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            display: flex;
+            
+        }
+         /* .box5{
+            background-color: blue;
+            对盒子自身设置
+            align-self: center;
+            } */
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+    </div>
+</body>
+</html>

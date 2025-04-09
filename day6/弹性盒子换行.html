@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 550px;
+            height: 600px;
+            background-color: pink;
+            display: flex;
+            /* 换行 :根据父容器宽度所能容纳的子容器数进行换行*/
+            flex-wrap: wrap;
+        }
+        .box div{
+            width: 100px;
+            height: 280px;
+            margin: 10px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

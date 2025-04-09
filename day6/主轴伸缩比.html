@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 设置子容器的宽度占比，使得无论父容器宽度如何变化，子容器宽度占比始终不变 */
+        .box{
+            width: 100%;
+            height: 500px;
+            background-color: pink;
+            display: flex;
+        }
+        .box div{
+            background-color: skyblue;
+            height: 400px;
+            margin: 10px;
+
+            /* 设置主轴上的剩余份数比，当前效果为4个子容器均分4份父容器的宽度 */
+            /* flex: 1; */
+        }
+
+        /* 通过单独设置某一个或几个子容器的宽度，在为剩下的容器设置flex，则剩下的容器按比均分（父容器宽度-被设置子容器的宽度） */
+        .box div:first-child{
+            width: 100px;
+        }
+        .box div:nth-child(n+2){
+            flex: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

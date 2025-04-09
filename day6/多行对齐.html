@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 800px;
+        height: 800px;
+        background-color: #8df;
+        margin: 0 auto;
+
+        /* 开启flex */
+        display: flex;
+
+        /* 开启换行 */
+        flex-wrap: wrap;
+
+        /* 父容器内子容器多行对齐，对所有子容器进行操作 */
+        align-content: center;
+        align-content: end;
+        align-content: start;
+        align-content: space-around;
+        align-content: space-between;
+        align-content: space-evenly;
+      }
+
+      .box .son {
+        width: 100px;
+        border-radius: 50px;
+        height: 100px;
+        background-color: pink;
+        margin: 0 150px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="son"></div>
+      <div class="son"></div>
+      <div class="son"></div>
+      <div class="son"></div>
+      <div class="son"></div>
+      <div class="son"></div>
+    </div>
+  </body>
+</html>

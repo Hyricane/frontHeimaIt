@@ -37,13 +37,19 @@
             /* align-items: end; */
 
             /* 拉伸 */
-            /* 在不设置子容器高度的情况下,拉伸子容器的高度,使其在高度上与父容器保持一致 */
-            align-items: stretch;
+            /* 在不设置子容器高度的情况下,拉伸子容器的高度,使其在高度上与父容器保持一致 
+            是默认设置*/
+            /* align-items: stretch; */
         }
         div{
             background-color: skyblue;
             width: 300px;
-            /* height: 400px; */
+            height: 400px;
+        }
+
+        div :nth-child(2){
+            /* 为单个子盒子设置侧轴对齐方式 */
+            align-self: end;
         }
     </style>
 </head>

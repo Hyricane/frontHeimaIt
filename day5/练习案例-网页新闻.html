@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        li{
+            list-style: none;
+        }
+        
+        section{
+            margin: 10px auto;
+            width: 422px;
+        }
+        .nav{
+            width: 422px;
+            height: 50px;
+            background-color: #efefef;
+            border-top: 1px solid grey;
+            border-bottom: 1px solid grey;
+            border-right: 1px solid grey;
+        }
+        .nav a{
+            text-align: center;
+            height: 51px;
+            width: 60px;
+            line-height: 50px;
+            display: block;
+            border-top: 3px orange solid;
+            margin-top: -1px;
+            background-color: #fff;
+        }
+        .content a{
+            height: 30px;
+            line-height: 30px;
+            background-image: url(./img/img.gif);
+            background-repeat: no-repeat;
+            /* 传入两个数值，第一个控制水平，第二个控制垂直 ，第二个数值可以省略，会自动垂直居中*/
+            background-position: 0;
+            padding-left: 20px;
+            
+        }
+        .content li{
+            background-image: url(./img/square.png);
+            background-repeat: no-repeat;
+            background-position: 5px center;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="nav">
+            <a  href="#" class="title">新闻</a>
+        </div>
+        <div class="content">
+            <ul>
+                <li><a href="#">推动学习教育入脑入心见行见效</a></li>
+                <li><a href="#">美国一边打贸易战一边求鸡蛋</a></li>
+                <li><a href="#">A股开盘 三大指数集体低开</a></li>
+                <li><a href="#">微软在华外包公司一天裁员近2000人</a></li>
+                <li><a href="#">又一波存款“降息”来袭</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

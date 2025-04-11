@@ -187,3 +187,59 @@ header .wrapper .user span{
     font-size: 16px;
     color: #00a4ff;
 }
+/* 精品推荐卡片区 */
+.wrapper#cards{
+    margin-top: 31px;
+    height: 601px;
+}
+.wrapper#cards .cards_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper#cards .cards_title h3{
+    font-size: 21px;
+    font-weight: normal;
+}
+.wrapper#cards .cards_title a{
+    margin-top: 5px;
+    font-size: 16px;
+    color: #efefef;
+}
+.wrapper#cards .cards_title a:hover{
+    color: #00a4ff;
+}
+.wrapper#cards .cards ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.wrapper#cards .cards ul li{
+    margin-top: 14px;
+    width: 228px;
+    height: 271px;
+    justify-content: center;
+    background-color: #fff;
+}
+.wrapper#cards .cards img{
+    width: 228px;
+    height: 156px;
+}
+.wrapper#cards .cards h3{
+    font-weight: normal;
+    font-size: 14px;
+    height: 37px;
+    padding: 20px 0 16px 0;
+    margin: 0 20px 0 20px;
+    
+}
+.wrapper#cards .cards p{
+    width: 188px;
+    color: #999;
+    padding: 20px 0 16px 0;
+    margin: 15px 20px 0 20px;   
+}
+.wrapper#cards .cards p::before{
+    content: "高级";
+    color: orange
+}

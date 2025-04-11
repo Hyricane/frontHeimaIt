@@ -70,6 +70,7 @@ header .wrapper .user span{
     margin-left: 10px;
     font-size: 14px;
 }
+
 /* 轮播图区 */
 .banner{
     width: 100%;
@@ -155,4 +156,34 @@ header .wrapper .user span{
     line-height: 32px;
     border-radius: 16px;
     color: #fff;
+}
+
+/* 精品推荐区 */
+.wrapper#recommend{
+    height: 60px;
+    margin-top: 12px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px rgba(70, 69, 69, 0.2);
+    display: flex;
+    align-items: center;
+    padding:0px 20px;
+}
+.wrapper#recommend ul{
+    display: flex;
+    /* 盒子占满剩余宽度，把其右侧的容器推到最右边 */
+    flex: 1;
+}
+.wrapper#recommend ul li{
+    padding: 0 24px;
+    font-size: 18px;
+    border-right: 1px solid #ccc;
+}
+.wrapper#recommend > h3{
+    font-weight: normal;
+    font-size: 18px;
+    color: #00a4ff;
+}
+.wrapper#recommend > a{
+    font-size: 16px;
+    color: #00a4ff;
 }

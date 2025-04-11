@@ -1,3 +1,4 @@
+/* 头部 */
 header{
     width: 100%;
     height: 100px;
@@ -66,5 +67,92 @@ header .wrapper .user{
     align-items: center;
 }
 header .wrapper .user span{
+    margin-left: 10px;
     font-size: 14px;
+}
+/* 轮播图区 */
+.banner{
+    width: 100%;
+    height: 420px;
+    background-color: #0092cb;
+}
+.banner .wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 420px;
+    background-image: url(../uploads/banner.png);
+}
+.banner .wrapper .left{
+    width: 190px;
+    height: 100%;
+}
+.banner .wrapper .right{
+    width: 218px;
+    height: 305px;
+    background-color: #209dd5;
+    align-self: center;
+    border-radius: 10px;
+}
+.banner .wrapper .left ul a{
+    height: 46px;
+    display: block;
+    line-height: 46px;
+    background-image: url(../images/right.png);
+    background-repeat: no-repeat;
+    background-position: 161px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.42);
+    padding-left: 12px;
+}
+.banner .wrapper .left ul li:last-child a{
+    height: 52px;
+    line-height: 52px;
+}
+.banner .wrapper .left ul a:hover{
+    color: #00a4ff;
+    background-image: url(../images/right-hover.png);
+    background-position: 161px;
+}
+.banner .wrapper .right .title{
+    padding: 18px 129px 9px 14px;
+    color: #fff;
+}
+.banner .wrapper .right .content{
+    width: 218px;
+    height: 257px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 14px;
+}
+.banner .wrapper .right .content ul{
+    font-size: 16px;
+}
+.banner .wrapper .right .content ul li{
+    margin-bottom: 12px;
+    border-bottom:2px solid rgba(164,202,255,0.19);
+}
+.banner .wrapper .right .content ul li:last-child{
+    margin-bottom: 6px;
+}
+.banner .wrapper .right .content ul li h4{
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+.banner .wrapper .right .content ul li p{
+    font-size: 12px;
+    color: #7d7d7d;
+    margin-bottom: 8px;
+}
+.banner .wrapper .right .content ul li p::before{
+    content: '正在学习';
+    color: #00a4ff;
+}
+.banner .wrapper .right .content button{
+    width: 100%;
+    background-color: #00a4ff;
+    border: none;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 16px;
+    color: #fff;
 }

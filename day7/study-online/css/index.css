@@ -243,3 +243,188 @@ header .wrapper .user span{
     content: "高级";
     color: orange
 }
+/* web课程推荐卡片区 */
+.wrapper#cards_web{
+    margin-top: 31px;
+    height: 430px;
+}
+.wrapper#cards_web .cards_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.wrapper#cards_web .cards_title h3{
+    font-size: 21px;
+    font-weight: normal;
+}
+.wrapper#cards_web .cards_title ul{
+    display: flex;
+    width: 308px;
+    justify-content: space-between;
+    
+}
+.wrapper#cards_web .cards_title a{
+    margin-top: 5px;
+    font-size: 16px;
+    color: #efefef;
+}
+.wrapper#cards_web .cards_title a:hover{
+    color: #00a4ff;
+}
+.wrapper#cards_web .aside{
+    width: 228px;
+	height: 386px;
+    background-image: url(../uploads/web_left.png);
+}
+.wrapper#cards_web .top{
+    float: top;
+    width: 957px;
+	height: 100px;
+    margin-left: 243px;
+    margin-top: -386px;
+    background-image: url(../uploads/web_top.png);
+}
+.wrapper#cards_web .main{
+    width: 957px;
+	height: 271px;
+    margin-top: 15px;
+    margin-left: 243px;
+}
+.wrapper#cards_web .cards ul{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper#cards_web .cards ul li{
+    width: 228px;
+    height: 271px;
+    justify-content: center;
+    background-color: #fff;
+}
+.wrapper#cards_web .cards img{
+    width: 228px;
+    height: 156px;
+}
+.wrapper#cards_web .cards h3{
+    font-weight: normal;
+    font-size: 14px;
+    height: 37px;
+    padding: 20px 0 16px 0;
+    margin: 0 20px 0 20px;
+    
+}
+.wrapper#cards_web .cards p{
+    width: 188px;
+    color: #999;
+    padding: 20px 0 16px 0;
+    margin: 15px 20px 0 20px;   
+}
+.wrapper#cards_web .cards p::before{
+    content: "高级";
+    color: orange
+}
+/* 课程介绍卡片版式2 */
+.wrapper#cards_python{
+    margin-top: 31px;
+    height: 316px;
+}
+.wrapper#cards_python .cards_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.wrapper#cards_python .cards_title h3{
+    font-size: 21px;
+    font-weight: normal;
+}
+.wrapper#cards_python .cards_title ul{
+    display: flex;
+    width: 308px;
+    justify-content: space-between;
+    
+}
+.wrapper#cards_python .cards_title a{
+    margin-top: 5px;
+    font-size: 16px;
+    color: #efefef;
+}
+.wrapper#cards_python .cards_title a:hover{
+    color: #00a4ff;
+}
+/* / */
+.wrapper#cards_python .cards ul{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper#cards_python .cards ul li{
+    width: 228px;
+    height: 271px;
+    justify-content: center;
+    background-color: #fff;
+}
+.wrapper#cards_python .cards img{
+    width: 228px;
+    height: 156px;
+}
+.wrapper#cards_python .cards h3{
+    font-weight: normal;
+    font-size: 14px;
+    height: 37px;
+    padding: 20px 0 16px 0;
+    margin: 0 20px 0 20px;
+    
+}
+.wrapper#cards_python .cards p{
+    width: 188px;
+    color: #999;
+    padding: 20px 0 16px 0;
+    margin: 15px 20px 0 20px;   
+}
+.wrapper#cards_python .cards p::before{
+    content: "高级";
+    color: orange
+}
+/* 页脚 */
+footer{
+    width: 100%;
+    background-color: #ffffff;
+}
+footer .footer_box{
+    display: flex;
+    height: 273px;
+    margin-top: 60px;
+    padding-top: 60px;
+    justify-content: space-between;
+}
+footer .footer_box div:first-child{
+    width: 432px;
+}
+.footer_box img{
+    margin-bottom: 24px;
+
+}
+.footer_box p{
+    font-size: 12px;
+    margin-bottom: 14px;
+}
+.footer_box div:first-child a{
+    display: block;
+    font-size: 14px;
+    width: 120px;
+    height: 36px;
+    border: 1px solid #00a4ff;
+    color: #00a4ff;
+    text-align: center;
+    line-height: 36px;
+}
+footer .footer_box div:last-child{
+    width: 516px;
+	height: 151px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_box dt{
+    font-size: 16px;
+    margin-bottom: 12px;
+}

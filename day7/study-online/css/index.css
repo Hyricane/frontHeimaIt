@@ -1,0 +1,70 @@
+header{
+    width: 100%;
+    height: 100px;
+	background-color: #ffffff;
+    padding-top: 29px;
+}
+header .wrapper{
+    display: flex;  
+}
+/* 直接给内容宽高，使其撑开外面的盒子 */
+header .wrapper .logo img{
+    width: 195px;
+    height: 41px;
+}
+header .wrapper .nav ul{
+    display: flex;
+    margin: 0 96px 0 102px;
+}
+header .wrapper .nav ul a{
+    padding: 6px 8px;
+    margin-right: 24px;
+    font-size: 19px;
+}
+/* 选择第一个li中的a标签 */
+header .wrapper .nav ul li:first-child a{
+    border-bottom: 2px solid #00a4ff;
+}
+header .wrapper .search {
+    width: 385px;
+    height: 40px;
+    padding-left: 19px;
+    padding-right: 12px;
+    margin-right: 32px;
+    border-radius: 20px;
+    background-color: #f3f5f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .wrapper .search input{
+    /* 背景色透明 */
+    background-color: transparent;
+    /* 去除外廓线 */
+    outline: none;
+    border: none;
+    /* 填充剩余尺寸 */
+    flex: 1;
+}
+/* 选择占位符文本 */
+header .wrapper .search input::placeholder{
+    color: #999999;
+    font-size: 14px;
+}
+header .wrapper .search button{
+    border: none;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    margin-left: 10px;
+    background-image: url(../images/search.png);
+}
+header .wrapper .user{
+    display: flex;
+    width: 116px;
+    height: 30px;
+    align-items: center;
+}
+header .wrapper .user span{
+    font-size: 14px;
+}

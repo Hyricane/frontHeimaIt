@@ -17,6 +17,7 @@ body {
       'WenQuanYi Micro Hei', sans-serif;
     /* css继承性 */
     color: #333;
+    background-color: #ccc;
 }
 .wrapper{
     width: 1200px;

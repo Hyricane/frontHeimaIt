@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+        background-color: pink;
+
+        position: absolute;
+        left: 100px;
+        top: 100px;
+      }
+      .box:nth-child(2) {
+        background-color: red;
+        left: 120px;
+        top: 120px;
+
+        /* 设置层级使某个处于下层的盒子在上层显示 */
+        z-index: 999;
+      }
+      .box:nth-child(3) {
+        background-color: green;
+        left: 140px;
+        top: 140px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 在没有额外设置的情况下  定位的盒子如果在结构的下面  在显示最上方 -->
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </body>
+</html>

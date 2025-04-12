@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
+        .box{
             width: 50px;
             height: 200px;
             background-color: pink;
@@ -17,10 +17,20 @@
             top: 30%;
             right: 0;
         }
+        .box div{
+            width: 25px;
+            height: 25px;
+            background-color: #fff;
+            margin: 5px 5px;
+        }
     </style>
 </head>
 <body>
-    <div></div>
+    <div class="box">
+        <div class="son1"></div>
+        <div class="son2"></div>
+        <div class="son3"></div>
+    </div>
     <p>第1个占位文本</p>
     <p>第2个占位文本</p>
     <p>第3个占位文本</p>

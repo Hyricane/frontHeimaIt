@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 所谓的精灵图就是一张图片，里面包含多个小图片，通过background-position属性来定位小图片的位置，从而实现多个小图片的切换。 */
+        .box1{
+            width: 120px;
+            height: 120px;
+            background-image: url(./img/abcd.jpg);
+            background-position: right bottom;
+        }
+        .box2{
+            width: 120px;
+            height: 120px;
+            background-image: url(./img/abcd.jpg);
+            background-position: -206px -128px;
+        }
+        .box3{
+            width: 120px;
+            height: 120px;
+            background-image: url(./img/abcd.jpg);
+            background-position: -955px -409px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 可以看到，文本pg并不是完全与图片底部对齐，多出来一个小尾巴，
+        这是因为行内块和行内显示方式是以基线进行对齐，所谓基线就是4线3格中的第三根 
+        还会引起的一个问题是不设置宽高下子容器高度无法完全覆盖父容器，会在父底部留白*/
+        .box{
+            background-color: pink;
+        }
+        .box2{
+            background-color: skyblue;
+        }
+        .box2 img{
+            /* 解决方案1：对行内块子容器设置垂直对齐，只要不是基线（base）即可 
+            top:顶线 
+            bottom：底线 
+            middle：中线*/
+
+            /* vertical-align: bottom; */
+        }
+        .box2 img{
+            /* 解决方式2：该特性只在行内块和行内样式中出现，因此转换显示模式为块元素即可 */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./img/abcd.jpg" alt="">
+        <span>pghello</span>
+    </div>
+
+    <div class="box2">
+        <img src="./img/abcd.jpg" alt="">
+        <!-- <span>pghello</span> -->
+    </div>
+</body>
+</html>

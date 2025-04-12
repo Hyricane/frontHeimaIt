@@ -1,0 +1,44 @@
+{
+  "id": "4890688",
+  "name": "字体图标学习",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "43969444",
+      "name": "xing",
+      "font_class": "a-xing_huaban1",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "43969480",
+      "name": "weixin",
+      "font_class": "a-weixin_huaban1",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "43969585",
+      "name": "dingwei",
+      "font_class": "a-dingwei_huaban1",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "43969607",
+      "name": "rongyu",
+      "font_class": "a-rongyu_huaban1",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "43969753",
+      "name": "xunzhang",
+      "font_class": "a-xunzhang_huaban1",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    }
+  ]
+}

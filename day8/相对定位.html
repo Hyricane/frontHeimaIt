@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 相对定位:1,不脱标，仍然占据原为的位置，只是显示到指定位置 
+                   2，相对于自身位置移动*/
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .box_1{
+            position: relative;
+            /* 并不是往左移动100px，而是距离左边100px,其他方向同理 */
+            left: 100px;
+            top: 100px;
+        }
+        .box_2{
+            position: relative;
+            /* right: 200px;
+            bottom: 200px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box_1"></div>
+    <div class="box_2"></div>
+</body>
+</html>

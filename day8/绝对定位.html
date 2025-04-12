@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 绝对定位 
+        脱标,不占用偏移前的位置*/
+        .box_1{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 没有父容器就相对于浏览器进行偏移 */
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+        .box_2{
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            /* 有父容器,就相对于被设置过定位的父容器进行偏移
+            注意! 父容器必须是定位的 */
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box_1">
+        <div class="box_2"></div>
+    </div>
+</body>
+</html>

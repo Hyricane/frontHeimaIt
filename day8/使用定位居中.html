@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color:pink;
+            margin: 0 auto;
+            position: relative;
+        }
+        .box_1{
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            position: absolute;
+            /* 首先让子盒子来到父盒子宽高的一半处,此时会发现子盒子的一角顶在父盒子的中心点
+            偏移量不是按照中心计算,而是按照边计算 */
+            top: 50%;
+            left: 50%;
+            /* 然后让子盒子往回移动自身宽高的一半 */
+            margin-top: -50px;
+            margin-left: -50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box_1"></div>
+    </div>
+</body>
+</html>

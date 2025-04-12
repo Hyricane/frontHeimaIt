@@ -1,0 +1,116 @@
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px 10px 100px;
+    background-color: #fff;
+}
+header .nav{
+    background: linear-gradient(to top, #ccc, #fff); /* 添加渐变背景 */
+    box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.4);
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+header .nav ul{
+    display: flex;
+    padding-left: 100px;
+}
+header .wrapper ul li{
+    width: 125px;
+    padding: 5px;
+    border-left: #fff 1px solid;
+    border-right: #fff 1px solid;
+    text-align: center;
+    /* background-color: pink; */
+}
+header .wrapper ul li a{
+    font-weight: bold;
+}
+.banner{
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    height: 600px;
+    background-position: center 0;
+}
+.declare{
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    padding: 0 110px 0 110px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.declare span:first-child::before{
+    content: "最新公告：";
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.declare span:first-child{
+    font-size: 12px;
+}
+.cards{
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 110px 10px 110px;
+    border: 1px solid #ccc;
+}
+.cards div{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+}
+.cards h4{
+    color: green;
+    height: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url(../img/jiantou.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    line-height: 16px;
+    margin-left: 5px;
+}
+.cards .img_box{
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cards .news_box{
+    height: 200px;
+}
+.cards .news_box dl{
+    padding: 0 20px 0 20px;
+    margin-top: 10px;
+}
+.cards .news_box dt{
+    color: red;
+    font-size: 14px;
+    padding: 5px 0 5px 0;
+}
+.cards .news_box dd{
+    font-size: 12px;
+    padding: 5px 0 5px 0;
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+}
+.cards .support ul{
+    padding: 0 0 0 20px;
+}
+.cards .support li{
+    background-image: url(../img/sbg.png);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    padding: 5px 0 5px 10px;
+    align-items: center;
+}
+.cards .support li a{
+    font-size: 12px;
+}
+.cards .support p{
+    font-size: 12px;
+    margin-left: 20px;
+}

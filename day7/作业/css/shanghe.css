@@ -97,6 +97,9 @@ header .wrapper ul li a{
     border-top: 1px dashed #ccc;
     border-bottom: 1px dashed #ccc;
 }
+.cards .support{
+    height: 320px;
+}
 .cards .support ul{
     padding: 0 0 0 20px;
 }
@@ -113,4 +116,5 @@ header .wrapper ul li a{
 .cards .support p{
     font-size: 12px;
     margin-left: 20px;
+    margin-top: 50px;
 }

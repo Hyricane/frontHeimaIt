@@ -38,7 +38,8 @@
             width: 100%;
             height: 167px;
         }
-        .banner::before{
+        .banner::before,
+        .banner::after{
             content: "<";
             text-align: right;
             align-content: center;
@@ -57,20 +58,30 @@
         }
         .banner::after{
             content: ">";
-            color: #fff;
             text-align: left;
             align-content: center;
-            padding-left: 10px;
-            display: block;
-            width: 40px;
-            height: 40px;
-            border-radius: 20px;
-            background-color: rgba(0, 0, 0, 0.3);
+            padding-left: 10px;;
+            left: 280px;
+        }
+        .banner .doted{
             position: absolute;
-            right: -20px;
-            top: 50%;
-            margin-top: -20px;
-            box-sizing: border-box;
+            width: 80px;
+            height: 20px;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .banner .doted span{
+            height: 15px;
+            width: 15px;
+            border-radius: 7px;
+            background-color: #fff;
+        }
+        .banner .doted span:hover{
+            background-color: #ccc;
         }
     </style>
 </head>
@@ -81,6 +92,9 @@
             <li><img src="./img/banner2.jpg" alt=""></li>
             <li><img src="./img/banner3.jpg" alt=""></li>
         </ul>
+        <div class="doted">
+            <span></span><span></span><span></span><span></span>
+        </div>
     </div>
 </body>
 </html>
